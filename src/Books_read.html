@@ -3,113 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <title>Books Read</title>
-</head>
-<body>
-    <header>
-        <img src="./Images/Logo.jpg" alt="Logo" width="32" height="32"> 
-        <h1> Rediet Woudma </h1>
-        <img src="./Images/Nav.png" alt="Navigation" width="24" height="24">
-    </header>
+    <link rel="stylesheet" href="main.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+        .c-item{
+            height: 480px;
+        }
+        .c-img{
+            height:100%;
+            object-fit: cover;
+          
+        }        
+        a{text-decoration: none; color: black;}
+
+    </style>
+    </head>
+<body class="m-3">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand">
+                <img src="./Images/Logo.jpg" alt="logo" width="30" height="24" class="d-inline-block align-top rounded-circle"/>
+                 Rediet Woudma
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav text-center ms-auto">
+                    <li>
+                        <a class="nav-link" href="./home.html"> Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Hobby.html"> Hobby</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Places_visited.html"> Places visited</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Books_read.html"> Books read</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Contributions.html"> Contributions</a>
+                    </li>
+                </ul>
+                </nav>
+
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active c-item">
+                        <img src="./Images/Home.webp" class="d-block w-100 c-img" alt="home background">
+                        <div class="carousel-caption  top-0 mt-4 ">
+                            <a href="./home.html" class="mt-5 fs-3" style="text-decoration: none; color: black;">Home</a>
+                            <p class="fs-5">Shoot for the moon even when you miss it you will land among the stars</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item c-item" >
+                        <img src="./Images/hobby.jpg" class="d-block w-100 c-img" alt="hobby bg">
+                        <div class="carousel-caption  top-0 mt-4 ">
+                            <a href="./Hobby.html" class="mt-5 fs-3" style="text-decoration: none; color: black;">Hobby</a>
+                            <p class="fs-5">We are what we repeatedly do, Excellence, then not act but a habit.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./Images/Travel.jpg" class="d-block w-100 c-img" alt="Travel bg">
+                        <div class="carousel-caption  top-0 mt-4 ">
+                            <a href="./Places_visited.html" class="mt-5 fs-3" style="text-decoration: none; color: black;">Places Visited</a>
+                            <p class="fs-5">Where to next?</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./Images/Books.jpg" class="d-block w-100 c-img" alt="books bg">
+                        <div class="carousel-caption  top-0 mt-4 ">
+                            <a href="./Books_read.html" class="mt-5 fs-3" style="text-decoration: none; color: black;">Books Read</a>
+                            <p class="fs-5"> <em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./Images/contibutions.jpg" class="d-block w-100 c-img" alt="bakgroung contributions">
+                        <div class="carousel-caption top-0 mt-4 ">
+                            <a href="./Contributions.html" class="mt-5 fs-3" style="text-decoration: none; color: black;"> contributions</a>
+                            <p>Life is not accumulation, it is <em>contribution</em>.</p></div></div></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
     <main>
-        <section id="Top">
-                <h2> <i>Books Read</i> </h2>
-                <blockquote> <em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</blockquote>
-            <img src="./Images/left_arrow.svg" alt="left arrow" width="24" height="24">
-            <img src="./Images/Books.jpg" alt="contributions" width="1000" height="150">
-            <a href="#Top"> Read More</a>
-            <img src="./Images/Right_arrow.svg" alt="right arrow" width="24" height="24"> 
-        </section>
-        <table>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Favorite Character</th>
-                <th>Memorable Quote</th>
-            </tr>
-            <tr>
-                <td>The Alchemist </td>
-                <td>Paulo Coelho</td>
-                <td>Santiago</td>
-                <td>"And, when you want something, all the universe conspires in helping you to achieve it."</td>
-            </tr>
-            <tr>
-                <td>Atomic Habits</td>
-                <td>James Clear</td>
-                <td>N/A</td>
-                <td>"You do not rise to the level of your goals, you fall to the level of your systems."</td>
-            </tr>
-            <tr>
-                <td>What I Know for Sure</td>
-                <td>Oprah Winfrey</td>
-                <td>N/A</td>
-                <td>"The more you praise and celebrate your life, the more there is in life to celebrate."</td>
-            </tr>
-            <tr>
-                <td> ሌላ ሰው</td>
-                <td> Dr Mihret Debebe </td>
-                <td> Mistere </td>
-                <td>"ጊዜ ከፈጣሪ ጋር የማይፈታው ችግር የሚፈጠረው፤ ለጊዜ ጊዜን መስጠት ሲሳነን ብቻ ነው"</td>
-            </tr>
-            <tr>
-                <td> Becoming </td>
-                <td> Michelle Obama </td>
-                <td> N/A </td>
-                <td>Now I think it’s one of the most useless questions an adult can ask a child—What do you want to be when you grow up? As if growing up is finite. As if at some point you become something and that’s the end.</td>
-            </tr>
-        </table>
-        <section>
+        <table class="table table-striped table-bordered">
+  <thead class="bg-gray-200">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Favorite Character</th>
+      <th>Memorable Quote</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The Alchemist</td>
+      <td>Paulo Coelho</td>
+      <td>Santiago</td>
+      <td>"And, when you want something, all the universe conspires in helping you to achieve it."</td>
+    </tr>
+    <tr>
+      <td>Atomic Habits</td>
+      <td>James Clear</td>
+      <td>N/A</td>
+      <td>"You do not rise to the level of your goals, you fall to the level of your systems."</td>
+    </tr>
+    <tr>
+      <td>What I Know for Sure</td>
+      <td>Oprah Winfrey</td>
+      <td>N/A</td>
+      <td>"The more you praise and celebrate your life, the more there is in life to celebrate."</td>
+    </tr>
+    <tr >
+      <td>ሌላ ሰው</td>
+      <td>Dr Mihret Debebe</td>
+      <td>ሚስጥር</td>
+      <td>"ጊዜ ከፈጣሪ ጋር የማይፈታው ችግር የሚፈጠረው፤ ለጊዜ ጊዜን መስጠት ሲሳነን ብቻ ነው"</td>
+    </tr>
+    <tr >
+      <td>Becoming</td>
+      <td>Michelle Obama</td>
+      <td>N/A</td>
+      <td>"Now I think it's one of the most useless questions an adult can ask a child—What do you want to be when you grow up? As if growing up is finite. As if at some point you become something and that's the end."</td>
+    </tr>
+  </tbody>
+</table>
+        <section class="row flex-row-reverse">
             <h3>The Alchemist </h3>
-            <img src="./Images/the_alchemist.jfif" alt="The alchemist" width="50" height="50">
+            <img src="./Images/the_alchemist.jfif" alt="The alchemist" height="400"class="col-md-4 col-6">
+            <section class="col-md">
             <p>"The Alchemist" is a renowned novel written by Brazilian author Paulo Coelho. It tells the enchanting story of Santiago, a young shepherd who embarks on a journey of self-discovery and fulfillment. Throughout the pages of this inspiring book, Coelho weaves a tale that resonates with readers, imparting profound lessons along the way.
             <p>One lesson I took from "The Alchemist" is the importance of following one's dreams and listening to the desires of the heart. Santiago's pursuit of his personal legend, his ultimate purpose in life, encourages us to identify our own dreams and have the courage to pursue them relentlessly. Coelho's narrative reminds us that the universe conspires to help those who are committed to their dreams, and that through perseverance and faith, we can overcome obstacles and achieve our true destinies.</p>
             <p>Another significant lesson is the idea that the journey itself is as valuable as the destination. Santiago's encounters with various individuals and his experiences along his quest highlight the transformative power of embracing the present moment. Coelho invites readers to savor the beauty of the present, to be open to new experiences, and to trust in the process of life. "The Alchemist" reminds us that the lessons and growth we gain on our journey are often just as, if not more, important than the ultimate goal we seek.</p>
-        </section>
-        <section>
+        </section></section>
+        <section class="row flex-row">
             <h3> Atomic Habits</h3>
-            <img src="./Images/Atomic_habit.jfif" alt="Atomic habit" width="50" height="50">
+            <img src="./Images/Atomic_habit.jfif" alt="Atomic habit" height="400"class="col-md-4 col-6">
+            <section class="col-md">
             <p>"Atomic Habits" is a compelling read that highlights the extraordinary impact of small habits on our lives. James Clear's insights and practical advice serve as a roadmap for developing positive behaviors and achieving long-term success. By embracing the power of atomic habits, we can unlock our potential, cultivate lasting change, and ultimately live a more fulfilling and purpose-driven life.</p>
             <p>One of the key lessons I took from "Atomic Habits" is the concept of habit stacking. Clear emphasizes the importance of leveraging existing habits to create new ones. By identifying a current behavior and pairing it with a desired habit, we can seamlessly integrate positive actions into our lives. This approach allows us to tap into the power of momentum and make lasting changes more effectively. Whether it's tying a new habit to something as simple as brushing our teeth or incorporating it into our morning routine, habit stacking enables us to build a strong foundation for personal transformation and continuous improvement.</p>
-        </section>
-        <section>
+        </section></section>
+        <section class="row flex-row-reverse">
             <h3> What I know for sure</h3>
-            <img src="./Images/Oprah.jfif" alt="What I know for sure" width="50" height="50">
+            <img src="./Images/Oprah.jfif" alt="What I know for sure" height="400"class="col-md-4 col-6">
+            <section class="col-md">
             <p>"What I Know for Sure" is a profound and uplifting book by Oprah Winfrey that encapsulates her personal reflections and life lessons. Through a collection of heartfelt essays, Oprah shares her wisdom, experiences, and the truths she has come to embrace throughout her journey.</p>
                 <p>One of the core lessons I took from "What I Know for Sure" is the importance of gratitude. Oprah highlights the transformative power of cultivating a grateful mindset and appreciating the present moment. By acknowledging and expressing gratitude for the blessings in our lives, we can shift our perspective, invite more positivity, and find joy in the simplest of things.</p>
                 <p>Another key takeaway from the book is the significance of embracing authenticity and staying true to oneself. Oprah encourages readers to honor their own unique journeys, embrace their passions, and live with purpose and integrity. She emphasizes the importance of listening to our inner voice, following our intuition, and making choices that align with our values and aspirations.</p>
-        </section>
-        <section>
+        </section></section>
+        <section class="row flex-row">
             <h3> ሌላ ሰው</h3>
-            <img src="./Images/lela_sew.jfif" alt="Lela sew" width="50" height="50">
+            <img src="./Images/lela_sew.jfif" alt="Lela sew" height="400"class="col-md-4 col-6">
+            <section class="col-md">
             <p>"Lela Sew," a novel written by the renowned Ethiopian psychiatrist Dr. Mihret Debebe, captivated me with its exploration of human psychology. As I immersed myself in the pages of this psychological fiction, I encountered a rich tapestry of characters and their intricate relationships. The central theme of the book revolves around a psychologist who grapples with a profound dilemma between his dedication to his country and his family responsibilities.</p>
             <p>One of the core lessons I took from "Lela Sew" is the understanding of human nature and the intricacies of the human psyche. Through the characters' experiences and interactions, I delved into the depths of personality, motivations, and the complexities of human behavior. This exploration served as a reminder of the vast spectrum of emotions and desires that shape our actions and relationships. It highlighted the importance of empathy and compassion as we navigate the intricacies of our own minds and the minds of others.</p>
-        </section>
-        <section>
+        </section></section>
+        <section class="row flex-row-reverse">
             <h3> Becoming</h3>
-            <img src="./Images/Becoming.jfif" alt="Becoming" width="50" height="50">
+            <img src="./Images/Becoming.jfif" alt="Becoming" height="400"class="col-md-4 col-6">
+            <section class="col-md">
             <p>Through her heartfelt storytelling and genuine vulnerability, Obama shares her journey of self-discovery, personal growth, and the lessons she learned along the way.
                 One of the most significant lessons I took from "Becoming" is the importance of embracing our own voice and identity. Obama's authenticity and unwavering commitment to staying true to herself, despite the challenges and expectations she faced, inspired me to reflect on my own journey of self-acceptance. Her story reminded me that it is through embracing our unique stories and backgrounds that we can truly make a difference in the world.</p>
             <p>Another valuable lesson I gleaned from the book is the power of resilience and determination. Obama's unwavering belief in herself and her ability to overcome obstacles resonated deeply with me. Her story serves as a reminder that setbacks and failures are not roadblocks but opportunities for growth and learning. Through her example, I have been encouraged to persevere in the face of adversity and to never be afraid to pursue my dreams.</p>
-        </section>
+        </section></section>
     </main>
-    <footer> 
-        <section><h4> Contact</h4>
-            <img src="./Images/email.svg" alt="email icon" width="24" height="24">
-            Redietwoudma@gmail.com<br>
-            <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
-            +251 912141567<br>
-            <a href="https://www.linkedin.com/yourprofile"><img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24"></a>
-            <a href="https://www.instagram.com/yourprofile"><img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24"></a>
-            <a href="https://www.telegram.com/yourprofile"><img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24"></a>
-            <a href="https://www.whatsapp.com/yourprofile"><img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24"></a>
-            </section>
-        <section>
-            <h4> Quick Links</h4>
-            <a href="./home.html"> Home</a><br>
-            <a href="./Hobby.html">Hobby</a><br>
-            <a href="./Places_visited.html">Places Visited</a><br>
-            <a href="./Books_read.html">Books Read</a><br>
-            <a href="./Contributions.html">Contributions</a><br>
-        </section>
+    <footer class="bg-light p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact</h4>
+                    <div class="contact-item d-flex align-items-center">
+                        <img src="./Images/email.svg" alt="email icon" width="24" height="24">
+                        <span class="ms-2">Redietwoudma@gmail.com</span>
+                    </div>
+                    <div class="contact-item d-flex align-items-center">
+                        <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
+                        <span class="ms-2">+251 912141567</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 >Social Media</h4>
+                    <div class="icons1 d-flex">
+                        <a href="https://www.linkedin.com/in/rediet-woudma-1410692a2/" class="me-2">
+                            <img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24">
+                        </a>
+                        <a href="https://www.instagram.com/?next=%2Fyourprofile%2F" class="me-2">
+                            <img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24">
+                        </a>
+                        <a href="https://t.me/Rediet_Woudma" class="me-2">
+                            <img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24">
+                        </a>
+                        <a href="https://www.whatsapp.com/yourprofile">
+                            <img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <a href="#Top">Home</a>
+                    <br>
+                    <a href="./Hobby.html">Hobby</a>
+                    <br>
+                    <a href="./Places_visited.html">Places Visited</a>
+                    <br>
+                    <a href="./Books_read.html">Books Read</a>
+                    <br>
+                    <a href="./Contributions.html">Contributions</a>
+                    <br>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

@@ -3,51 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <title>Hobby</title>
-</head>
-<body>
-    <header>
-        <img src="./Images/Logo.jpg" alt="Logo" width="32" height="32"> 
-        <h1> Rediet Woudma </h1>
-        <img src="./Images/Nav.png" alt="Navigation" width="24" height="24">
-    </header>
+    <link rel="stylesheet" href="main.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+        .c-item{
+            height: 480px;
+        }
+        .c-img{
+            height:100%;
+            object-fit: cover;
+        }
+        a{text-decoration: none; color: black;}
+
+    </style></head>
+<body class="m-3">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand">
+                <img src="./Images/Logo.jpg" alt="logo" width="30" height="24" class="d-inline-block align-top rounded-circle"/>
+                 Rediet Woudma
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav text-center ms-auto">
+                    <li>
+                        <a class="nav-link" href="./home.html"> Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Hobby.html"> Hobby</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Places_visited.html"> Places visited</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Books_read.html"> Books read</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Contributions.html"> Contributions</a>
+                    </li>
+                </ul>
+                </nav>
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active c-item">
+                        <img src="./Images/Home.webp" class="d-block w-100 c-img" alt="home background">
+                        <div class="carousel-caption  top-0 mt-4 ">
+                            <a href="./home.html" class="mt-5 fs-3" style="text-decoration: none; color: black;">Home</a>
+                            <p class="fs-5">Shoot for the moon even when you miss it you will land among the stars</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item c-item" >
+                        <img src="./Images/hobby.jpg" class="d-block w-100 c-img" alt="hobby bg">
+                        <div class="carousel-caption  top-0 mt-4 ">
+                            <a href="./Hobby.html" class="mt-5 fs-3" style="text-decoration: none; color: black;">Hobby</a>
+                            <p class="fs-5">We are what we repeatedly do, Excellence, then not act but a habit.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./Images/Travel.jpg" class="d-block w-100 c-img" alt="Travel bg">
+                        <div class="carousel-caption  top-0 mt-4 ">
+                            <a href="./Places_visited.html" class="mt-5 fs-3" style="text-decoration: none; color: black;">Places Visited</a>
+                            <p class="fs-5">Where to next?</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./Images/Books.jpg" class="d-block w-100 c-img" alt="books bg">
+                        <div class="carousel-caption  top-0 mt-4 ">
+                            <a href="./Books_read.html" class="mt-5 fs-3" style="text-decoration: none; color: black;">Books Read</a>
+                            <p class="fs-5"> <em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./Images/contibutions.jpg" class="d-block w-100 c-img" alt="bakgroung contributions">
+                        <div class="carousel-caption top-0 mt-4 ">
+                            <a href="./Contributions.html" class="mt-5 fs-3" style="text-decoration: none; color: black;"> contributions</a>
+                            <p>Life is not accumulation, it is <em>contribution</em>.</p></div></div></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
     <main>
-        <section id="Top">
-            <h2> <i>Hobby</i></h2>
-            <blockquote> We are what we repeatedly do, <i>Excellence</i>, then is not an act but a <em>habit</em>.</blockquote>
-            <img src="./Images/left_arrow.svg" alt="left arrow" width="24" height="24">
-            <img src="./Images/hobby.jpg" alt="Hobby" width="1000" height="250">
-            <a href="#Top"> Read More</a>
-            <img src="./Images/Right_arrow.svg" alt="right arrow" width="24" height="24"> 
-        </section>
-        <section>
+        <section class="row m-3 flex-row-reverse" ><section class="col-md">
                 <h3> Horse Riding</h3>
                 <p>Horse riding is a captivating hobby that holds a special place in my heart, even though I may not have the opportunity to indulge in it as often as I'd like. The bond between a rider and their horse is an extraordinary connection that transcends words, creating a profound sense of unity and harmony.
                     Whenever I mount a horse, I am instantly transported to a world of tranquility and freedom. The rhythmic sound of hooves, the gentle sway of the saddle, and the subtle communication between rider and steed create an unmatched sense of serenity. It is in these moments that I feel truly alive and in tune with nature.</p>
                 <p> The love I have for horse riding stems from the remarkable bond that forms between myself and these majestic creatures. Horses possess an innate wisdom and grace that is both humbling and awe-inspiring. Through patient and gentle guidance, I have learned to navigate their powerful movements, forging a connection built on mutual trust and respect.
                     While my opportunities for horse riding may be limited, each experience becomes a cherished memory</p>
                 <p>Horse riding teaches me valuable lessons of patience, discipline, and empathy. It reminds me of the importance of listening, not just to the horse's cues, but also to the subtle messages conveyed by the natural world around us. It is a constant reminder of the beauty of simplicity and the profound impact that gentle communication can have.
-                    Though I may not have the chance to indulge in horse riding as frequently as I desire, the love I hold for this hobby remains unwavering.</p>
-                <figure>
-                    <img src="./Images/Horse_riding.jpg" alt="Horse riding" width="250" height="150">
-                    <figcaption> Horse riding</figcaption>
+                    Though I may not have the chance to indulge in horse riding as frequently as I desire, the love I hold for this hobby remains unwavering.</p></section>
+                <figure class="figure col-md w-100" >
+                    <img src="./Images/Horse_riding.jpg" alt="Horse riding" class="figure-img">
+                    <figcaption class="figure-caption"> Horse riding</figcaption>
                 </figure>
-            <article> 
+                </section>
+            <article class="col-md"> 
                 <h3> Coding</h3>
                 <p>As a software engineer, coding is not only a hobby but also an integral part of my professional life. It is a skill that I have honed and continue to develop as I navigate the ever-evolving landscape of technology and software development.
                     Coding is the foundation of my work as a software engineer, enabling me to design, develop, and implement various software solutions. It is through coding that I bring ideas to life, creating functional and efficient applications, systems, and websites that meet the needs of users and clients.</p>
                 <p>The joy I find in coding extends beyond my professional responsibilities. Even outside of work, I still engage in coding projects and personal coding endeavors, exploring new technologies, experimenting with different programming languages, and staying up to date with industry trends. This continuous learning and exploration fuel my passion for coding and propel me forward in my career.</p>
             </article>
-            <article> 
+            <section class="row flex-row"><article class="col-md"> 
                 <h3> Playing Guitar</h3>
                 <p> Playing the acoustic guitar has been a delightful and fulfilling hobby for me, allowing me to embrace the joy of music purely for personal enjoyment. My journey began when I stumbled upon the mesmerizing melodies of Henok Temesgen, an exceptional guitarist from Ethiopia, whose music struck a chord deep within my soul. Inspired by his unique style, I embarked on a self-taught exploration of the acoustic guitar.
                     Driven by passion and curiosity, I immersed myself in the world of chords, strums, and fingerpicking patterns. Tracy Chapman, with her soulful tunes and captivating storytelling, also played a significant role in shaping my musical aspirations. Her ability to convey raw emotions through her acoustic guitar playing resonated deeply with me.</p>
                     <p>As a self-taught guitarist, I embarked on a personal adventure of discovery. Guided by the melodies that stirred my heart, I spent countless hours experimenting, learning, and honing my skills. From the gentle harmonies of folk music to the infectious rhythms of blues, I found solace and inspiration in the strings of my acoustic guitar.
-                    Playing solely for my own pleasure, the guitar has become my trusted companion throughout life's journey.</p>
-                <figure><audio controls>
+                    Playing solely for my own pleasure, the guitar has become my trusted companion throughout life's journey.</p> </article>
+                <figure class="figure col-md"><audio controls>
                     <source src="./Images/guitar_audio.ogg" type="audio/ogg">
                 </audio>
                 <figcaption> My trial of 'ከተራራው ማዶ'</figcaption></figure>
-                </article>
+               </section>
             <article>
                 <h3> Ground Tennis</h3>
                 <p>Ground tennis is a cherished hobby of mine, allowing me to revel in the excitement of the game while maintaining a healthy and active lifestyle. Among the many renowned players, Rafael Nadal stands as my favorite, serving as a constant source of inspiration with his exceptional skills and unwavering dedication to the sport.</p>
@@ -63,25 +141,52 @@
             
         </section>
     </main>
-    <footer> 
-        <section><h4> Contact</h4>
-        <img src="./Images/email.svg" alt="email icon" width="24" height="24">
-        Redietwoudma@gmail.com<br>
-        <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
-        +251 912141567<br>
-        <a href="https://www.linkedin.com/yourprofile"><img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24"></a>
-        <a href="https://www.instagram.com/yourprofile"><img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24"></a>
-        <a href="https://www.telegram.com/yourprofile"><img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24"></a>
-        <a href="https://www.whatsapp.com/yourprofile"><img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24"></a>
-        </section>
-        <section>
-            <h4> Quick Links</h4>
-            <a href="./home.html"> Home</a><br>
-            <a href="./Hobby.html">Hobby</a><br>
-            <a href="./Places_visited.html">Places Visited</a><br>
-            <a href="./Books_read.html">Books Read</a><br>
-            <a href="./Contributions.html">Contributions</a><br>
-        </section>
+    <footer class="bg-light p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact</h4>
+                    <div class="contact-item d-flex align-items-center">
+                        <img src="./Images/email.svg" alt="email icon" width="24" height="24">
+                        <span class="ms-2">Redietwoudma@gmail.com</span>
+                    </div>
+                    <div class="contact-item d-flex align-items-center">
+                        <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
+                        <span class="ms-2">+251 912141567</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 >Social Media</h4>
+                    <div class="icons1 d-flex">
+                        <a href="https://www.linkedin.com/in/rediet-woudma-1410692a2/" class="me-2">
+                            <img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24">
+                        </a>
+                        <a href="https://www.instagram.com/?next=%2Fyourprofile%2F" class="me-2">
+                            <img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24">
+                        </a>
+                        <a href="https://t.me/Rediet_Woudma" class="me-2">
+                            <img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24">
+                        </a>
+                        <a href="https://www.whatsapp.com/yourprofile">
+                            <img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <a href="#Top">Home</a>
+                    <br>
+                    <a href="./Hobby.html">Hobby</a>
+                    <br>
+                    <a href="./Places_visited.html">Places Visited</a>
+                    <br>
+                    <a href="./Books_read.html">Books Read</a>
+                    <br>
+                    <a href="./Contributions.html">Contributions</a>
+                    <br>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

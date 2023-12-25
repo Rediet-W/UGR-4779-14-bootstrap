@@ -3,28 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <title>Home </title>
+    <link rel="stylesheet" href="main.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+        .c-item{
+            height: 480px;
+        }
+        .c-img{
+            height:100%;
+            object-fit: cover;
+          
+        }
+        a{text-decoration: none; color: black;}
+    </style>
 </head>
-<body>
-    <header>
-        <img src="./Images/Logo.jpg" alt="Logo" width="32" height="32"> 
-        <h1> Rediet Woudma </h1>
-        <img src="./Images/Nav.png" alt="Navigation" width="24" height="24">
-    </header>
+<body class="m-3">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="#" class="navbar-brand">
+            <img src="./Images/Logo.jpg" alt="logo" width="30" height="24" class="d-inline-block align-top rounded-circle"/>
+             Rediet Woudma
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav text-center ms-auto">
+                <li>
+                    <a class="nav-link" href="./home.html"> Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./Hobby.html"> Hobby</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./Places_visited.html"> Places visited</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./Books_read.html"> Books read</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./Contributions.html"> Contributions</a>
+                </li>
+            </ul>
+        </nav>
+            
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="./Images/Home.webp" class="d-block w-100 c-img" alt="home background">
+                <div class="carousel-caption  top-0 mt-4 ">
+                    <a href="./home.html" class="mt-5 fs-3" >Home</a>
+                    <p class="fs-5">Shoot for the moon even when you miss it you will land among the stars</p>
+                  </div>
+              </div>
+              <div class="carousel-item c-item" >
+                <img src="./Images/hobby.jpg" class="d-block w-100 c-img" alt="hobby bg">
+                <div class="carousel-caption  top-0 mt-4 ">
+                    <a href="./Hobby.html" class="mt-5 fs-3" >Hobby</a>
+                    <p class="fs-5">We are what we repeatedly do, Excellence, then not act but a habit.</p>
+                  </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="./Images/Travel.jpg" class="d-block w-100 c-img" alt="Travel bg">
+                <div class="carousel-caption  top-0 mt-4 ">
+                    <a href="./Places_visited.html" class="mt-5 fs-3" >Places Visited</a>
+                    <p class="fs-5">Where to next?</p>
+                  </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="./Images/Books.jpg" class="d-block w-100 c-img" alt="books bg">
+                <div class="carousel-caption  top-0 mt-4 ">
+                    <a href="./Books_read.html" class="mt-5 fs-3" >Books Read</a>
+                    <p class="fs-5"> <em>Reading</em> is a passport to worlds unseen, where the mind embarks on scenic adventures and the imagination takes flight.</p>
+                  </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="./Images/contibutions.jpg" class="d-block w-100 c-img" alt="bakgroung contributions">
+                <div class="carousel-caption top-0 mt-4 ">
+                    <a href="./Contributions.html" class="mt-5 fs-3" > contributions</a>
+                    <p>Life is not accumulation, it is <em>contribution</em>.</p></div></div></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     <main>
-        <section id="Top">
-                <h2> <i>Home</i></h2>
-                <blockquote> Shoot for the moon even when you <i>miss</i> it you will land among the stars</blockquote>
-            <img src="../src/Images/left_arrow.svg" alt="left arrow" width="24" height="24">
-            <img src="../src/Images/Home.webp" alt="Home" width="1000" height="200">
-            <a href="#Top"> Read More</a>
-            <img src="../src/Images/Right_arrow.svg" alt="right arrow" width="24" height="24"> 
-        </section>
         <section>
-            <h2> Professional Summary </h2>
+            <h2 class="title mt-2"> Professional Summary </h2>
             <p> Versatile software engineering graduate with a degree in law, combining technical proficiency and legal knowledge to deliver innovative solutions. Strong project management skills, adept at navigating complex regulations, and ensuring compliance. Effective collaborator and problem-solver, with a passion for staying current in both software engineering and legal practices.</p>
             </section>
-            <section>
-                <h2> Skills</h2>
+            <section class="row">
+            <section class="col-md">
+                <h2 class="title"> Skills</h2>
                 <ul> <li> Software Development </li>
                     <li> Legal Compliance</li>
                     <li>Research analysis </li>
@@ -36,13 +116,13 @@
                     <li> Project Management</li>
                     <li> Continuous Learning </li></ul>
             </section>
-            <section> 
+            <section class="col-md"> 
                 <h2> Educational Background</h2>
                 <p> <strong>Bachelor of Science</strong> : Software Engineering and Computing Technologies, Addis Ababa University, 2021-2026: <br>
                     Completed a comprehensive program that provided a strong foundation in software engineering principles, programming languages, and software development methodologies. Developed skills in designing and implementing software solutions, collaborating in team environments, and delivering successful projects.</p>
                 <p> <strong> Bachelor of Arts </strong> : Jurisprudence, University of Oxford, 2027-2030: <br>
                     Pursued a prestigious program in Jurisprudence at the University of Oxford, studying law and legal theory at an advanced level. Explored various areas of law, including contract law, criminal law, constitutional law, and more. Gained critical thinking, analytical, and research skills necessary for legal analysis and problem-solving. Engaged in rigorous academic study and developed a comprehensive understanding of legal principles and their application in different contexts.</p>
-            </section>
+            </section></section>
             <section> 
                     <h2>Work Experience </h2>
                 <p><em>Software Engineer, Amazon, 2026: </em><br>
@@ -71,25 +151,52 @@
                 Email: john.smith@rdxtech.com<br>
                 Phone: +1 123-456-7890<br></p></section>
     </main>
-    <footer> 
-        <section><h4> Contact</h4>
-        <img src="./Images/email.svg" alt="email icon" width="24" height="24">
-        Redietwoudma@gmail.com<br>
-        <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
-        +251 912141567<br>
-        <a href="https://www.linkedin.com/yourprofile"><img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24"></a>
-        <a href="https://www.instagram.com/yourprofile"><img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24"></a>
-        <a href="https://www.telegram.com/yourprofile"><img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24"></a>
-        <a href="https://www.whatsapp.com/yourprofile"><img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24"></a>
-        </section>
-        <section>
-            <h4> Quick Links</h4>
-            <a href="#Top"> Home</a><br>
-            <a href="./Hobby.html">Hobby</a><br>
-            <a href="./Places_visited.html">Places Visited</a><br>
-            <a href="./Books_read.html">Books Read</a><br>
-            <a href="./Contributions.html">Contributions</a><br>
-        </section>
+    <footer class="bg-light p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact</h4>
+                    <div class="contact-item d-flex align-items-center">
+                        <img src="./Images/email.svg" alt="email icon" width="24" height="24">
+                        <span class="ms-2">Redietwoudma@gmail.com</span>
+                    </div>
+                    <div class="contact-item d-flex align-items-center">
+                        <img src="./Images/phone.svg" alt="phone icon" width="24" height="24">
+                        <span class="ms-2">+251 912141567</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 >Social Media</h4>
+                    <div class="icons1 d-flex">
+                        <a href="https://www.linkedin.com/in/rediet-woudma-1410692a2/" class="me-2">
+                            <img src="./Images/linkedin.svg" alt="linkedin icon" width="24" height="24">
+                        </a>
+                        <a href="https://www.instagram.com/?next=%2Fyourprofile%2F" class="me-2">
+                            <img src="./Images/instagram.svg" alt="instagram icon" width="24" height="24">
+                        </a>
+                        <a href="https://t.me/Rediet_Woudma" class="me-2">
+                            <img src="./Images/telegram.svg" alt="telegram icon" width="24" height="24">
+                        </a>
+                        <a href="https://www.whatsapp.com/yourprofile">
+                            <img src="./Images/whatsapp.svg" alt="whatsapp icon" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <a href="#Top">Home</a>
+                    <br>
+                    <a href="./Hobby.html">Hobby</a>
+                    <br>
+                    <a href="./Places_visited.html">Places Visited</a>
+                    <br>
+                    <a href="./Books_read.html">Books Read</a>
+                    <br>
+                    <a href="./Contributions.html">Contributions</a>
+                    <br>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
